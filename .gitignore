@@ -1,0 +1,24 @@
+# Backup and legacy folders
+v1_legacy_approach/
+v2_backup25sept/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Node.js
+node_modules/
+.next/
+
+# OS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+
+# Test outputs
+agent_test_output_*.txt

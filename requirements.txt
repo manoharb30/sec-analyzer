@@ -1,0 +1,25 @@
+# Legacy dependencies (v1 approach)
+exa-py>=1.0.0
+openai>=1.0.0
+python-dotenv>=1.0.0
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+pandas>=2.0.0
+
+# New LangGraph dependencies (v2 approach)
+langchain-anthropic>=0.1.0
+langchain-exa>=0.1.0
+langgraph>=0.1.0
+langchain>=0.1.0
+langsmith>=0.1.0
+
+# Additional utilities
+fastapi>=0.100.0
+uvicorn>=0.23.0
+pydantic>=2.0.0
+
+
+cerebras-cloud==1.0.0
+aiohttp==3.9.0
+asyncio==3.4.3
