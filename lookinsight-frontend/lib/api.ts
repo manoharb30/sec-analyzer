@@ -68,6 +68,19 @@ export const api = {
   async healthCheck(): Promise<{ status: string }> {
     return fetchWithError<{ status: string }>(`${API_BASE_URL}/health`);
   },
+
+  // Ask follow-up question about a filing
+  async askQuestion(ticker: string, question: string): Promise<{ answer: string; sources: any[] }> {
+    return fetchWithError<{ answer: string; sources: any[] }>(`${API_BASE_URL}/question`, {
+      method: 'POST',
+      body: JSON.stringify({ ticker, question }),
+    });
+  },
+
+  // Get suggested questions for a ticker
+  async getSuggestedQuestions(ticker: string): Promise<{ questions: string[] }> {
+    return fetchWithError<{ questions: string[] }>(`${API_BASE_URL}/suggested-questions/${ticker}`);
+  },
 };
 
 // SWR fetcher function

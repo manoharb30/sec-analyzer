@@ -93,8 +93,7 @@ export async function POST(request: NextRequest) {
     console.error(`🌐 [FRONTEND API] ERROR after ${duration}ms:`, error);
     console.error(`🌐 [FRONTEND API] Error details:`, {
       name: error instanceof Error ? error.name : 'Unknown',
-      message: error instanceof Error ? error.message : 'Unknown error',
-      cause: error instanceof Error ? error.cause : undefined
+      message: error instanceof Error ? error.message : 'Unknown error'
     });
 
     return NextResponse.json(
